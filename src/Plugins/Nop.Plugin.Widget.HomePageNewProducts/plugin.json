@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Widgets",
+  "FriendlyName": "Home Page New Products",
+  "SystemName": "Widgets.HomePageNewProducts",
+  "Version": "1.00",
+  "SupportedVersions": [ "4.20" ],
+  "Author": "nopCommerce team",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Widgets.HomePageNewProducts.dll",
+  "Description": "This plugin allows you to display specific number of the most recently added products at Home Page"
+}
