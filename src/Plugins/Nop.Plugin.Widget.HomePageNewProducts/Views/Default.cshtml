@@ -6,7 +6,7 @@
 {
     <div class="product-grid home-page-product-grid">
         <div class="title">
-            <strong>@T("HomePage.NewProducts")</strong>
+            <strong>@T("New Products")</strong>
         </div>
         <div class="item-grid">
             @foreach (var item in Model)
@@ -15,14 +15,6 @@
                     @await Html.PartialAsync("_ProductBox", item)
                 </div>
             }
-        </div>
-    </div>
-}
-else
-{
-    <div class="product-grid home-page-product-grid">
-        <div class="title">
-            <strong>No Products</strong>
         </div>
     </div>
 }

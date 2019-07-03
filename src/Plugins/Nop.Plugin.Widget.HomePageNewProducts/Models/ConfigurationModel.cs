@@ -24,7 +24,8 @@ namespace Nop.Plugin.Widgets.HomePageNewProducts.Models
         public bool WidgetZone_OverrideForStore { get; set; }
 
         [NopResourceDisplayName("Plugins.Widgets.HomePageNewProducts.NumberOfProducts")]
-        [Display(Name = "Numper of Products")]
+        [Display(Name = "Number of Products")]
+        [Range(0, 100)]
         public int NumberOfProducts { get; set; }
 
         public bool NumberOfProducts_OverrideForStore { get; set; }

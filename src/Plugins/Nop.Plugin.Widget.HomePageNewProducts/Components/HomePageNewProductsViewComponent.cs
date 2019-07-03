@@ -57,10 +57,10 @@ namespace Nop.Plugin.Widgets.HomePageNewProducts.Components
                 visibleIndividuallyOnly: true,
                 markedAsNewOnly: true).OrderByDescending(p => p.CreatedOnUtc).Take(numberOfNewProductsToShow).ToList();
 
-            //if (!newProducts.Any())
-            //{
-            //    return Content("");
-            //}
+            if (!newProducts.Any())
+            {
+                return Content("");
+            }
 
             var model = _productModelFactory.PrepareProductOverviewModels(newProducts, true, true).ToList();
 

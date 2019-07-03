@@ -42,7 +42,7 @@ namespace Nop.Plugin.Widgets.HomePageNewProducts
 
         public IList<string> GetWidgetZones()
         {
-            return new List<string> { _settingService.GetSettingByKey<string>(typeof(HomePageNewProductsSettings).Name + "." + "WidgetZone") ?? "home_page_top" };
+            return new List<string> { _settingService.GetSettingByKey<string>(typeof(HomePageNewProductsSettings).Name + "." + "WidgetZone") ?? "home_page_before_products" };
 
         }
 
@@ -73,7 +73,7 @@ namespace Nop.Plugin.Widgets.HomePageNewProducts
             //settings
             var settings = new HomePageNewProductsSettings
             {
-                WidgetZone = _settingService.GetSettingByKey<string>(typeof(HomePageNewProductsSettings).Name + "." + "WidgetZone") ?? "home_page_top",
+                WidgetZone = _settingService.GetSettingByKey<string>(typeof(HomePageNewProductsSettings).Name + "." + "WidgetZone") ?? "home_page_before_products",
                 NumberOfProducts = _settingService.GetSettingByKey<int>(typeof(HomePageNewProductsSettings).Name + "." + "NumberOfProducts")
 
             };
